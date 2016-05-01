@@ -1,0 +1,255 @@
+html {
+	height:100%;
+}
+body {
+	height: 100%;
+  	background: #f7f7f7;
+	margin: 0 auto;
+	font: 13px / 1.4 Helvetica, Meiryo, arial, nimbussansl, liberationsans, freesans, clean, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+a {
+    color: #08c;
+	text-decoration: none;
+}
+a:hover {
+    color: #08c;
+    text-decoration: underline;
+}
+a:hover span {
+	color: #08c !important;
+}
+/*a:hover .screen_name {*/
+a:hover .screen_name {
+	color: #A0A0A0 !important;
+	text-decoration: none !important;
+}
+.profile {
+	/*border: solid 1px black;*/
+}
+#menu {
+    /*max-width: 590px;*/
+    padding-top: 4px;
+    padding-bottom: 4px;
+    background: rebeccapurple;
+    /*border-bottom: 1px solid #259d4f;*/
+}
+.check {
+	margin-top: 6px;
+	margin-right: 655px;
+	padding: 5px 10px;
+	vertical-align: middle;
+	float: right;
+	/*border: solid 1px #d5d5d5;*/
+	border-radius: 3px;
+    background-color: #4d2673;
+	/*background-image: linear-gradient(#fcfcfc, #eee);*/
+    /*background-color: #039924;*/
+    /*-webkit-filter: brightness(0.80);*/
+
+    /*border-color: #039924;*/
+}
+.check:hover{
+    background-color: #402060;
+	/*background-image: linear-gradient(#eee, #ddd);*/
+    /*background-color: #038a20;*/
+    /*border-color: #038a20;*/
+    text-decoration: none;
+}
+.check:active{
+    background-color: #27133a;
+    /*background-color: #02711a;*/
+	/*background-color: #dcdcdc;*/
+    /*-webkit-filter: brightness(0.85);*/
+	/*box-shadow: inset 0 1px 6px rgba(0, 0, 0, 0.20);*/
+}
+.check > span {
+	/*color: #222;*/
+    color: white;
+    visibility: collapse;
+	font-size: 20px !important;
+	/*text-shadow: 0 1px 0 #fff;*/
+}
+.check > span:before {
+    visibility: collapse;;
+}
+.check > span:after {
+    font-family: Meiryo;
+    visibility: visible;
+    color: white;
+    position: relative;
+    top: 0px;
+    left: 5px;
+    margin-right: 7px;
+    font-size: 12px;
+    /*font-weight: bold;*/
+    content: 'すべて既読にする';
+    -webkit-filter: brightness(9.00);
+}
+.check:hover > span{
+	color: white !important;
+	text-decoration: none;
+}
+.check:active > span{
+	color: white !important;
+	text-decoration: none;
+}
+#timeline {
+	height: auto;
+	max-width: 590px;
+	min-width: 100px;
+	margin: 0px auto;
+	background: white;
+	border: solid 1px #ddd;
+    border-top-width: 0;
+  	/*border-radius: 4px 4px 4px 4px;*/
+}
+.avator {
+	float: left;
+    margin-top: 7px;
+	background-size: 26px;
+	height: 26px;
+	width: 26px;
+    /*margin-left: 15px;*/
+    margin-left: 670px;
+}
+.avator:after {
+    content: "Twisto";
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    position: relative;
+    top: 7;
+    left: 30;
+}
+.username {
+    visibility: collapse;
+	margin-left: 10px;
+	font-size: 17px;
+	line-height: 41px;
+	font-weight: 400;
+	/*text-shadow: 0 1px 0 #fff;*/
+}
+.username:before {
+    margin-right: 2px;
+    content: '@';
+}
+.time {
+	/*float: right;*/
+    position: absolute;
+    right: 8px;
+    top: 8px;
+	color: #A0A0A0;
+}
+.time:hover {
+	color: #08c;
+	text-decoration: none;
+}
+.tweet {
+	position: relative;
+	padding: 12px;
+	border-bottom: solid 1px #ddd !important;
+	overflow: hidden;
+}
+.is_unread {
+    /*background-color: #32CB99;*/
+    /*background-color: #2dbe60;*/
+    background-color: rebeccapurple;
+    color: white;
+    padding: 1px 4px 0 4px;
+    border-radius: 3px;
+}
+.is_unread:hover {
+    /*background-color: #CB3299;*/
+    background-color: #28a956;
+    color: white;
+}
+#statuses {
+	display: none;
+}
+.tweet:hover {
+  /*background-color: #f5f8fa !important; .js override this without important */
+  background-color: #fbfbfb !important; /*.js override this without important */
+  /*cursor: pointer;*/
+}
+.tweet:active {
+	/*background-color: aliceblue !important;*/
+}
+.tweet:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  border-width: 0 12px 0 12px;
+  border-style: solid;
+  border-color: #fff #eee #fff #ddd;
+}
+.user_icon {
+	float: left;
+    width: 48px;
+    height: 48px;
+	margin-left: -60px;
+	border-radius: 4px 4px 4px 4px;
+}
+.content {
+	margin-left: 60px;
+}
+.content-retweet {
+    margin-left: 33px;
+    margin-bottom: 4px;
+    vertical-align: middle;
+}
+.retweet_icon {
+    position: relative;
+    top: 3px;
+}
+.retweet {
+    margin-left: 3px;
+    color: gray;
+    vertical-align: middle;
+}
+.retweet:after {
+    margin-left: 5px;
+    content: 'retweeted.';
+}
+.content-header {
+}
+.name {
+	color: #292f33;
+	font-weight: bold;
+}
+.screen_name {
+	margin-left: 3px;
+	color: #A0A0A0;
+    text-decoration: none !important;
+}
+.screen_name:before {
+	content: '@';
+}
+.content-body {
+    margin-top: 2px;
+	/*margin-top: 5px;*/
+}
+.text {
+/*	font-size: 14px;
+    line-height: 19px;*/
+    font-size: 16px;
+    line-height: 20px;
+}
+.media { 
+	margin-top: 5px;
+	/*max-width: 300px;*/
+    max-width: 503px;
+    /*max-height: 136px;    */
+	border-radius: 4px;
+}
+.media:hover {
+	-webkit-filter: brightness(0.85);
+}
+.content-footer {
+	display: none;
+	color: #999;
+}
+.content-footer > span {
+	margin-right: 25px;
+	/*height: 1.5em;*/
+}

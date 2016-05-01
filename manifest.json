@@ -1,0 +1,36 @@
+{
+    "name": "TwiSto",
+	"manifest_version": 2,
+    "version": "1.0",
+     "browser_action": {
+	      "default_icon": "image/book.png",
+	      "default_title": "Open Timeline"
+	 },
+    "description": "You can become stalker of twitter accounts you following", 
+    "icons": {
+        "16": "image/book.png", 
+        "32": "image/book.png", 
+        "64": "image/book.png"
+    }, 
+    "permissions": [
+        "storage",
+        "https://twitter.com/",
+        "https://api.twitter.com/",
+        "http://pbs.twimg.com/",
+        "unlimitedStorage", 
+        "notifications", 
+        "tabs",
+        "background",
+        "alarms",
+        "notifications"
+    ],
+    "background": {
+        "persistent": true,
+	    "scripts": ["js/jquery-2.1.4.min.js", "js/array.js", "js/preference.js", "js/storage.js", "js/background.js", "js/jsOAuth-1.3.6.min.js"]
+	},
+    "web_accessible_resources": [
+        "image/96.png",
+        "js/options.js",
+        "html/tweet.html"
+    ]
+}

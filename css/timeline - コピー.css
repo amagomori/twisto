@@ -1,0 +1,221 @@
+html {
+	height:100%;
+}
+body {
+	height: 100%;
+  	background: #f7f7f7;
+	margin: 0;
+	font: 13px / 1.4 Helvetica, Meiryo, arial, nimbussansl, liberationsans, freesans, clean, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+a {
+    color: #08c;
+	text-decoration: none;
+}
+a:hover {
+    color: #08c;
+    text-decoration: underline;
+}
+a:hover span {
+	color: #08c !important;
+}
+/*a:hover .screen_name {*/
+a:hover .screen_name {
+	color: #A0A0A0 !important;
+	text-decoration: none !important;
+}
+.profile {
+	/*border: solid 1px black;*/
+}
+#menu {
+  max-width: 590px;
+  height: 40px;
+  background: #F5F5F5;
+  color: #333;
+  border: solid 1px #ddd;
+  border-bottom-width: 0;
+  border-radius: 3px 3px 0 0;
+}
+.check {
+	margin-top: 5px;
+	margin-right: 8px;
+	padding: 3px 10px;
+	vertical-align: middle;
+	float: right;
+	border: solid 1px #d5d5d5;
+	border-radius: 3px;
+	background-image: linear-gradient(#fcfcfc, #eee);
+}
+.check:hover{
+	background-image: linear-gradient(#eee, #ddd);
+}
+.check:active{
+	background-color: #dcdcdc;
+	box-shadow: inset 0 1px 6px rgba(0, 0, 0, 0.20);
+}
+.check > span {
+	color: #222;
+	font-size: 20px !important;
+	text-shadow: 0 1px 0 #fff;
+}
+.check > span:after {
+    font-family: Meiryo;
+    color: #222;
+    position: relative;
+    top: -1px;
+    left: 5px;
+    margin-right: 7px;
+    font-size: 12px;
+    font-weight: bold;
+    content: 'すべて既読にする';
+}
+.check:hover > span{
+	color: black !important;
+	text-decoration: none;
+}
+.check:active > span{
+	color: black !important;
+	text-decoration: none;
+}
+#timeline {
+	height: auto;
+	max-width: 590px;
+	min-width: 100px;
+	margin: 0px auto;
+	background: white;
+	border: solid 1px #ddd;
+  	/*border-radius: 4px 4px 4px 4px;*/
+}
+.avator {
+	float: left;
+	background-size: 40px;
+	height: 40px;
+	width: 40px;
+	border-right: solid 1px #ddd;
+	border-radius: 3px 0 0 0;
+}
+.username {
+	margin-left: 10px;
+	color: #333;
+	font-size: 14px;
+	line-height: 41px;
+	font-weight: bold;
+	text-shadow: 0 1px 0 #fff;
+}
+.username:before {
+    margin-right: 2px;
+    content: '@';
+}
+.time {
+	float: right;
+	color: #A0A0A0;
+}
+.time:hover {
+	color: #08c;
+	text-decoration: none;
+}
+.tweet {
+	position: relative;
+	padding: 12px;
+	border-bottom: solid 1px #ddd !important;
+	overflow: hidden;
+}
+.is_unread {
+    background-color: #32CB99;
+    color: white;
+    padding: 1px 4px 0 4px;
+    border-radius: 3px;
+}
+.is_unread:hover {
+    background-color: #CB3299;
+    color: white;
+}
+#statuses {
+	display: none;
+}
+.tweet:hover {
+  /*background-color: #f5f8fa !important; .js override this without important */
+  background-color: #fbfbfb !important; /*.js override this without important */
+  /*cursor: pointer;*/
+}
+.tweet:active {
+	/*background-color: aliceblue !important;*/
+}
+.tweet:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  border-width: 0 12px 0 12px;
+  border-style: solid;
+  border-color: #fff #eee #fff #ddd;
+}
+.user_icon {
+	float: left;
+    width: 48px;
+    height: 48px;
+	margin-left: -60px;
+	border-radius: 4px 4px 4px 4px;
+}
+.content {
+	margin-left: 60px;
+}
+.content-retweet {
+    margin-left: 33px;
+    margin-bottom: 4px;
+    vertical-align: middle;
+}
+.retweet_icon {
+    position: relative;
+    top: 3px;
+}
+.retweet {
+    margin-left: 3px;
+    color: gray;
+    vertical-align: middle;
+}
+.retweet:after {
+    margin-left: 5px;
+    content: 'retweeted.';
+}
+.content-header {
+}
+.name {
+	color: #292f33;
+	font-weight: bold;
+}
+.screen_name {
+	margin-left: 3px;
+	color: #A0A0A0;
+    text-decoration: none !important;
+}
+.screen_name:before {
+	content: '@';
+}
+.content-body {
+    margin-top: 2px;
+	/*margin-top: 5px;*/
+}
+.text {
+/*    font-size: 13px;
+    line-height: 16px;*/
+	font-size: 14px;
+    line-height: 19px;
+/*    font-size: 16px;
+    line-height: 22px;*/
+}
+.media { 
+	margin-top: 5px;
+	max-width: 300px;
+	border-radius: 4px;
+}
+.media:hover {
+	-webkit-filter: brightness(0.85);
+}
+.content-footer {
+	display: none;
+	color: #999;
+}
+.content-footer > span {
+	margin-right: 25px;
+	/*height: 1.5em;*/
+}
